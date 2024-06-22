@@ -1,5 +1,7 @@
 
 import Image from 'next/image'
+import img from "@/app/assets/phone.webp"
+
 export default function Home() {
   return (
     <div className="home-section" id="home">
@@ -8,7 +10,7 @@ export default function Home() {
        
         <div className="home-image">
           
-          <Image src="/assets/phone.webp" alt="Image" width={50} height={50} />
+          <Image src={img} alt="Image" width={50} height={50} />
         </div>
 
         
