@@ -38,11 +38,11 @@ export default function Navbar() {
               Features
             </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a href="#contact" className="nav-links">
               Contact
             </a>
-          </li>
+          </li> */}
         </ul>
 
         {/* Navigation links (mobile view) */}

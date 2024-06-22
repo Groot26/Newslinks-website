@@ -15,12 +15,12 @@ export default function Footer() {
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          <div className="footer-section contact">
+          {/* <div className="footer-section contact">
             <h2>Contact Us</h2>
             <p><i className="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
             <p><i className="fas fa-phone-alt"></i> +123 456 7890</p>
             <p><i className="fas fa-envelope"></i> info@company.com</p>
-          </div>
+          </div> */}
         </div>
         <div className="footer-bottom">
           &copy; 2024 GraysLab | All Rights Reserved
