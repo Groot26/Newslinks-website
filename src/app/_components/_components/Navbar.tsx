@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* Navigation links (desktop view) */}
         <ul className={`nav-menu`}>
           <li className="nav-item">
-            <a href="#home" className="nav-links">
+            <a href="/" className="nav-links">
               Home
             </a>
           </li>
