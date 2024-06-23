@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { scaleVariant } from "@/variant";
 import Image from "next/image";
 import img from "@/assets/Mockup-2.png";
+import {features} from "@/data/placeholder-data"
 
 export default function Features() {
   const ref = useRef(null);
@@ -22,42 +23,21 @@ export default function Features() {
       <div className="features-content">
         <h1 style={{ fontSize: "44px" }}>Features</h1>
 
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={variants}
-           transition={{ duration: 0.5, delay:  0.2 }}  // delay: index *  0.2
-          className="features-list"
-          style={{ fontSize: "20px" }}
-        >
+        <div className="features-list" style={{ fontSize: "20px" }}>
           <ul>
-            <li>
-              <strong>Comprehensive News Coverage</strong>: Get the latest and
-              trending news across various categories.
-            </li>
-            <li>
-              <strong>Easy Search</strong>: Quickly find news articles by
-              keywords or topics.
-            </li>
-            <li>
-              <strong>Trusted Sources</strong>: Access news from reputable
-              publishers to ensure you get accurate information.
-            </li>
-            <li>
-              <strong>Publisher Information</strong>: Check the source and
-              publishing date of each news article.
-            </li>
-            <li>
-              <strong>Engaging Visuals</strong>: View images related to the news
-              to get a better understanding of the story.
-            </li>
-            <li>
-              <strong>User-Friendly Interface</strong>: Enjoy a simple and
-              intuitive design for a seamless news browsing experience.
-            </li>
+            {features.map((feature, index) => (
+              <motion.li
+                key={index}
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={variants}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+              >
+                <strong>{feature.title}</strong>: {feature.description}
+              </motion.li>
+            ))}
           </ul>
-        </motion.div>
+        </div>
       </div>
 
       <motion.div

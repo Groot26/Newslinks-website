@@ -232,7 +232,17 @@ body {
   padding: 50px;
 }
 
-.features-list{
-  padding:0px;
-  text-align: left
+.features-list {
+  padding: 0px;
+  text-align: left;
 }
+
+.features-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  margin-bottom: 10px; 
+}
+
