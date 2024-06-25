@@ -6,5 +6,3 @@
         { title: "Engaging Visuals", description: "View images related to the news to get a better understanding of the story." },
         { title: "User-Friendly Interface", description: "Enjoy a simple and intuitive design for a seamless news browsing experience." }
       ];
-
-      

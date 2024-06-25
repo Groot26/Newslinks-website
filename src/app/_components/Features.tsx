@@ -11,9 +11,6 @@ export default function Features() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const refList = useRef(null);
-  const isInViewList = useInView(ref, { once: true, margin: "-50px 0px" });
-
   const variants = {
     hidden: { rotateX: -90, opacity: 0 },
     visible: { rotateX: 0, opacity: 1 },
@@ -22,7 +19,6 @@ export default function Features() {
     <div className="features-section" id="features">
       <div className="features-content">
         <h1 style={{ fontSize: "44px" }}>Features</h1>
-
         <div className="features-list" style={{ fontSize: "20px" }}>
           <ul>
             {features.map((feature, index) => (
@@ -31,7 +27,7 @@ export default function Features() {
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={variants}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
+                transition={{ duration: 0.5, delay: index * 0.3 }}
               >
                 <strong>{feature.title}</strong>: {feature.description}
               </motion.li>
@@ -45,7 +41,7 @@ export default function Features() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={scaleVariant}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="home-image "
       >
         <Image src={img} alt="Image" height={500} />

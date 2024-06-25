@@ -102,6 +102,7 @@ body {
     display: none;
   }
 }
+
 /* Footer */
 .footer {
   background-color: #203040;
@@ -186,12 +187,12 @@ body {
 /* Home */
  
 .home-section, .about-section, .features-section, .contact-section {
-  height: 95vh;  
+  /* height: 95vh;   */
   display: flex;
 }
 
 .home-section {
-  height: 85vh; 
+  /* height: 85vh;  */
   /* background-color: #f8f9fa;  */
   padding: 25px; 
 }
@@ -238,7 +239,7 @@ body {
 }
 
 .features-list ul {
-  list-style: none;
+  /* list-style: none; */
   padding: 0;
 }
 
