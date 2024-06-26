@@ -15,7 +15,7 @@ export default function About() {
          initial="hidden"
          animate={isInView ? "visible" : "hidden"}
           variants={baselineTextVariant}
-          style={{ fontSize: "54px" }}
+          // style={{ fontSize: "40px" }}
         >
           About NewsLinks
         </motion.h1>
@@ -26,7 +26,8 @@ export default function About() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={baselineTextVariant}
-             style={{ fontSize: "22px" }}>
+            //  style={{ fontSize: "20px" }}
+             >
           At NewsLinks, we believe that staying informed should be easy and
           accessible. Our app is designed to provide users with a seamless
           experience in accessing the latest news from a variety of reputable
